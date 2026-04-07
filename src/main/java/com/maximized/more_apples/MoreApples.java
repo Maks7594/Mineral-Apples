@@ -56,17 +56,17 @@ public class MoreApples
     // Creates apple items with different materials
     public static final RegistryObject<Item> COAL_APPLE = ITEMS.register("coal_apple", () -> new Item(new Item.Properties().food(new FoodProperties.Builder()
             .alwaysEat()
-            .nutrition(3)
-            .saturationMod(1f)
+            .nutrition(5)
+            .saturationMod(1.2f)
             .effect(() -> new MobEffectInstance(MobEffects.NIGHT_VISION, minutesToTicks(3), 0), 1.0f)
             .effect(() -> new MobEffectInstance(MobEffects.DIG_SPEED, minutesToTicks(2), 0), 1.0f)
             .build())));
     public static final RegistryObject<Item> IRON_APPLE = ITEMS.register("iron_apple", () -> new Item(new Item.Properties().food(new FoodProperties.Builder()
             .alwaysEat()
-            .nutrition(4)
+            .nutrition(5)
             .saturationMod(1.1f)
             .effect(() -> new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, minutesToTicks(3), 0), 1.0f)
-            .effect(() -> new MobEffectInstance(MobEffects.MOVEMENT_SLOWDOWN, minutesToTicks(2), 0), 1.0f)
+            .effect(() -> new MobEffectInstance(MobEffects.MOVEMENT_SLOWDOWN, minutesToTicks(2), 1), 1.0f)
             .build())));
     public static final RegistryObject<Item> DIAMOND_APPLE = ITEMS.register("diamond_apple", () -> new Item(new Item.Properties().food(new FoodProperties.Builder()
             .alwaysEat()
