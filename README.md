@@ -9,7 +9,7 @@ Emerald Apple - Hero of the Village for 3min, Luck 2 for 5min, Regeneration 1 fo
 Netherite Apple - Regeneration 3 for 10s, Health Boost 3 for 4min, Strength 2 for 3min  
 Quartz Apple - Fire Resistance for 3min  
 # Fabric? 1.21+? Backport?
-Fabric port: No. Works 100% with Sinytra Connector.  
+Fabric port: No. Should fully work with Sinytra Connector.  
 1.21+: Maybe.  
 Backport: No.  
 I'm not stopping you from making your own fork though.
