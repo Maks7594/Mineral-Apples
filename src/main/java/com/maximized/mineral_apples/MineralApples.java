@@ -1,4 +1,4 @@
-package com.maximized.more_apples;
+package com.maximized.mineral_apples;
 
 import com.mojang.logging.LogUtils;
 import net.minecraft.core.registries.Registries;
@@ -21,10 +21,10 @@ import net.minecraftforge.registries.RegistryObject;
 import org.slf4j.Logger;
 
 // The value here should match an entry in the META-INF/mods.toml file
-@Mod(MoreApples.MODID)
-public class MoreApples
+@Mod(MineralApples.MODID)
+public class MineralApples
 {
-    public static final String MODID = "more_apples";
+    public static final String MODID = "mineral_apples";
     private static final Logger LOGGER = LogUtils.getLogger();
     public static final DeferredRegister<Item> ITEMS = DeferredRegister.create(ForgeRegistries.ITEMS, MODID);
     public static final DeferredRegister<CreativeModeTab> CREATIVE_MODE_TABS = DeferredRegister.create(Registries.CREATIVE_MODE_TAB, MODID);
@@ -100,7 +100,7 @@ public class MoreApples
 
     // Creates a creative tab with the id "examplemod:apples_tab" for the apples, that is placed after the food tab
     public static final RegistryObject<CreativeModeTab> APPLES_TAB = CREATIVE_MODE_TABS.register("apples_tab", () -> CreativeModeTab.builder()
-            .title(Component.translatable("itemGroup.more_apples.apples_tab"))
+            .title(Component.translatable("itemGroup.mineral_apples.apples_tab"))
             .withTabsBefore(CreativeModeTabs.FOOD_AND_DRINKS)
             .icon(() -> DIAMOND_APPLE.get().getDefaultInstance())
             .displayItems((parameters, output) -> {
@@ -112,7 +112,7 @@ public class MoreApples
                 output.accept(QUARTZ_APPLE.get());
             }).build());
 
-    public MoreApples(FMLJavaModLoadingContext context)
+    public MineralApples(FMLJavaModLoadingContext context)
     {
         IEventBus modEventBus = context.getModEventBus();
 
@@ -136,7 +136,7 @@ public class MoreApples
 
     private void commonSetup(final FMLCommonSetupEvent event)
     {
-        LOGGER.info("Hello from More Apples!");
+        LOGGER.info("Hello from Mineral Apples!");
     }
 
     private void addCreative(BuildCreativeModeTabContentsEvent event)

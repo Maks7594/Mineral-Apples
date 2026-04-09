@@ -1,6 +1,6 @@
 {
   "parent": "item/generated",
   "textures": {
-    "layer0": "more_apples:item/emerald_apple"
+    "layer0": "mineral_apples:item/iron_apple"
   }
 }
