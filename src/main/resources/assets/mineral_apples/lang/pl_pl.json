@@ -1,0 +1,9 @@
+{
+  "item.mineral_apples.coal_apple": "Węglane jabłko",
+  "item.mineral_apples.iron_apple": "Żelazne jabłko",
+  "item.mineral_apples.diamond_apple": "Diamentowe jabłko",
+  "item.mineral_apples.emerald_apple": "Szmaragdowe jabłko",
+  "item.mineral_apples.netherite_apple": "Netherytowe jabłko",
+  "item.mineral_apples.quartz_apple": "Kwarcowe jabłko",
+  "itemGroup.mineral_apples.apples_tab": "Mineral Apples"
+}

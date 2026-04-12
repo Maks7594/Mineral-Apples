@@ -56,14 +56,14 @@ public class MineralApples
     // Creates apple items with different materials
     public static final RegistryObject<Item> COAL_APPLE = ITEMS.register("coal_apple", () -> new Item(new Item.Properties().food(new FoodProperties.Builder()
             .alwaysEat()
-            .nutrition(5)
-            .saturationMod(1.2f)
+            .nutrition(4)
+            .saturationMod(1f)
             .effect(() -> new MobEffectInstance(MobEffects.NIGHT_VISION, minutesToTicks(3), 0), 1.0f)
             .effect(() -> new MobEffectInstance(MobEffects.DIG_SPEED, minutesToTicks(2), 0), 1.0f)
             .build())));
     public static final RegistryObject<Item> IRON_APPLE = ITEMS.register("iron_apple", () -> new Item(new Item.Properties().food(new FoodProperties.Builder()
             .alwaysEat()
-            .nutrition(5)
+            .nutrition(4)
             .saturationMod(1.1f)
             .effect(() -> new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, minutesToTicks(3), 0), 1.0f)
             .effect(() -> new MobEffectInstance(MobEffects.MOVEMENT_SLOWDOWN, minutesToTicks(2), 1), 1.0f)
@@ -146,11 +146,11 @@ public class MineralApples
 
     // Helper functions
 
-    private static int minutesToTicks(int x) {
-        return x * 60 * 20;
+    private static int minutesToTicks(int minutes) {
+        return minutes * 60 * 20;
     }
 
-    private static int secondsToTicks(int x) {
-        return x * 20;
+    private static int secondsToTicks(int seconds) {
+        return seconds * 20;
     }
 }

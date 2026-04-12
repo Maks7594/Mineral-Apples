@@ -1,0 +1,16 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "AAA",
+        "ABA",
+        "AAA"
+    ],
+    "key": {
+        "A": { "item": "minecraft:quartz" },
+        "B": { "item": "minecraft:apple" }
+    },
+    "result": {
+        "item": "mineral_apples:quartz_apple",
+        "count": 1
+    }
+}
